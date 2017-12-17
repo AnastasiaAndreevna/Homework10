@@ -20,8 +20,8 @@ function multi () {
 console.log(multi)
 
 function div () {
-  if (number2 = 0) {
-    number1 / number2
+  if (0 < number2 < 0) {
+    return number1 / number2
   }
 }
 
@@ -49,8 +49,10 @@ function cos () {
   return Math.cos(number1)
 }
 
+console.log(cos)
+
 function factorial () {
-  return n ? n * factorial(n - 1) : 1
+  return number1 ? number2 * factorial(number2 - 1) : 1
 }
 
 console.log(factorial(number1))
