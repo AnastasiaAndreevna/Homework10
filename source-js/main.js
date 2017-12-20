@@ -17,7 +17,7 @@ function multi (number1, number2) {
 console.log(multi(14, 7))
 
 function div (number1, number2) {
-  if (0 < number2 < 0) {
+  if (number2 !== 0) {
     return number1 / number2
   }
 }
