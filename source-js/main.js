@@ -1,58 +1,68 @@
-var number1
-var number2
-
-function add () {
+function add (number1, number2) {
   return number1 + number2
 }
 
-console.log(add)
+console.log(add(14, 7))
 
-function sub () {
+function sub (number1, number2) {
   return number1 - number2
 }
 
-console.log(sub)
+console.log(sub(14, 7))
 
-function multi () {
+function multi (number1, number2) {
   return number1 * number2
 }
 
-console.log(multi)
+console.log(multi(14, 7))
 
-function div () {
+function div (number1, number2) {
   if (0 < number2 < 0) {
     return number1 / number2
   }
 }
 
-console.log(div)
+console.log(div(14, 7))
 
-function exponentiation () {
+function exponentiation (number1, number2) {
   return Math.pow(number1, number2)
 }
 
-console.log(exponentiation())
+console.log(exponentiation(4, 3))
 
-function root () {
+function root (number1) {
   return Math.sqrt(number1)
 }
 
-console.log(root())
+console.log(root(10))
 
-function sin () {
+function sin (number1) {
   return Math.sin(number1)
 }
 
-console.log(sin)
+console.log(sin(5))
 
-function cos () {
+function cos (number1) {
   return Math.cos(number1)
 }
 
-console.log(cos)
+console.log(cos(5))
 
-function factorial () {
-  return number1 ? number2 * factorial(number2 - 1) : 1
+function factorial (number1) {
+  if (number1 < 0) {
+    return 'numbers  under 0 are not allowed'
+  }
+  else if (number1 === 0 || number1 === 1) {
+    return 1
+  }
+  else {
+    return number1 * factorial(number1 - 1)
+  }
 }
 
-console.log(factorial(number1))
+console.log(factorial(-1))
+console.log(factorial(0))
+console.log(factorial(1))
+console.log(factorial(2))
+console.log(factorial(5))
+console.log(factorial(8))
